@@ -406,6 +406,16 @@ themes      : ['Default', 'Classic', 'Basic', 'Bootstrap3', 'Twitter', 'Raised',
     <button class="ui toggle button">
       Vote
     </button>
+    <script type="text/javascript">
+      $('.ui.toggle.button')
+        .state({
+          text: {
+            inactive : 'Vote',
+            active   : 'Voted'
+          }
+        })
+      ;
+    </script>
   </div>
 
   <div class="example">
